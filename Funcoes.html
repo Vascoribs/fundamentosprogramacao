@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt">
+    <head>
+        <meta charset="utf-8">
+        <title>Funcoes</title>
+        <script>
+            console.log("Olá Jovem")
+            console.log("Olá Arturito")
+            console.log("Olá Sidónio")
+            console.log("Olá Valter")
+
+            /* trabalhar com funções tem sempre duas partes: declaração e invocação
+            primeiro faz-se a declaração, guarda na memória o que irá eventualmente acontecer
+            segundo, invoca-se quando necessário, só quando for invocado é que a função corre */
+
+
+            function greeting(name) {
+                console.log("Olá", name);
+            }
+
+            greeting("Jovem");
+            greeting("Arturito");
+            greeting("Sidónio");
+            greeting("Valter");
+
+            /* definição de uma função com dois argumentos */
+            function sum(x, y) {
+                console.log(x + y);
+            }
+
+            /* invocar pode ser feito quantas vezes quisermos, com argumentos diferentes */
+            sum(50, 10);
+            sum(2, 2);
+            sum(17, 39);
+
+            /* criar uma função de subtração de numeros, mostra o resultado de um nomero menos o outro */
+
+            function sub(x, y) {
+                console.log(x - y);
+            }
+
+            sub(10, 5);
+            sub(5, 2);
+            sub(10, 3);
+
+        </script>
+    </head>
+    <body></body>
+</html>

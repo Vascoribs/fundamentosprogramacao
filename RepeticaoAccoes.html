@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt">
+	<head>
+		<meta charset="utf-8">
+		<title>Repetição de Acções</title>
+		<script>
+			console.log("Alarme toca");
+			
+			console.log("Alarme toca");
+			
+			console.log("Alarme toca");
+			
+			console.log("Alarme toca");
+
+			/*
+				para não repetir código multiplas vezes, usamos um ciclo para reproduzir esse número de acções.
+			
+				Um ciclo normalmente requer três coisas:
+				1) o inicio
+				2) uma condição para terminar
+				3) uma maneira de chegar a esse final
+			*/
+
+			var x = 1; /* criar o inicio */
+			while(x <= 20) { /* condição para o ciclo decorrer */
+				console.log("Alarme a tocar X vezes");
+				
+				x = x + 1; /* maneira de chegar ao final: quando o x chegar aos 20, termina */
+			}
+
+            for(var y = 1; y <= 40; y = y + 1) {
+                console.log("Outro alarme a tocar");
+            }
+
+            for(var z = 1; z <= 10; z = z + 1) {
+                console.log(z);
+            }
+
+            /* exercício: criar um ciclo para mostrar os números de 0 a 100, mas de dois em dois */
+            console.log("-------------");
+            for(var a = 0; a <= 100; a = a + 2) {
+                console.log(a);
+            }
+             /* exercicio: criar um ciclo para mostrar os números de 30 a 1, ou seja, em ordem inversa ao que temos estado a fazer */
+             console.log("----------------");
+            for(var b = 30; b >= 1; b = b - 1) {
+                console.log(b);
+            }
+		</script>
+	</head>
+	<body>
+	
+	</body>
+</html>

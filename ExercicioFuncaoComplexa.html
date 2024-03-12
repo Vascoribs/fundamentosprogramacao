@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt">
+    <head>
+        <meta charset="utf-8">
+        <title>Exercício de Função Complexa: Avaliação de Alunos</title>
+        <script>
+            /* pretendido criar uma função chamada "grade" quando invocada, recebe o nome do aluno, mais a avaliação em número de 0 a 20
+            exemplos: 
+                grader("Marco", 15);
+                grader("Sofia", 20);
+                grader("Marisa", 8);
+                grader("Tiago", 12);
+            output:
+                Marco teve Bom Proveito
+                Sofia teve Excelente proveito
+                Marisa teve Negativo proveito
+                tiaga teve Suficiente proveito
+            classificações:
+                0 a 9 = Negativo
+                10 a 14 = Suficiente
+                15 a 18 = Bom
+                19 a 20 = Excelente
+            */
+
+            function grade(name, nota){
+
+                    if (nota >= 19) {
+                    (nota = "Excelente");
+                    }
+                    if (nota >= 15 && nota <= 18) {
+                    (nota = "Bom");
+                    }
+                    if (nota >= 10 && nota <=14) {
+                    (nota = "Suficiente");
+                    }
+                    if (nota >= 0 && nota <= 9) {
+                    (nota = "Negativo");
+                    }
+                
+                    {
+                    console.log(name, "teve", nota, "proveito.");
+                    } 
+                }
+            
+                grade("Marco", 15);
+                grade("Sofia", 20);
+                grade("Marisa", 8);
+                grade("Tiago", 12);
+
+
+                function grader(name, grade) {
+                if ( grade >=19 && grade <=20) {
+                    console.log(name, "teve excelente proveito");
+                }
+                if ( grade >= 15 && grade <= 18) {
+                    console.log(name, "teve bom proveito");
+                }
+                if ( grade >=10 && grade <=14) {
+                    console.log(name, "teve suficiente proveito");
+                }
+                if ( grade >=0 && grade <=9) {
+                    console.log(name, "teve insuficiente proveito");
+                }
+            }
+
+            grader("Sofia", 20);
+            grader("Marisa", 8);
+            grader("Tiago", 12);
+            grader("Marco", 15);
+          
+        </script>
+    </head>
+    <body></body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt">
+    <head>
+        <meta charset="utf-8">
+        <title>
+            Guardar múltiplas coisas numa única variável
+        </title>
+        <script>
+            var country1 = "Portugal";
+            var country2 = "Espanha";
+            var country3 = "Brasil";
+            var country4 = "França";
+
+            console.log();
+
+            /* criar um array para poder guardar multiplos registos num único sítio */
+            var countries = ["Portugal", "Espanha", "Brasil", "França", "Canadá"] ;
+
+            console.log(countries);
+
+            console.log(countries [0]);
+            console.log(countries [4]);
+
+            var animals = ["Cão", "Gato", "Cavalo", "Elefante", "Macaco", "Javali"];
+
+            console.log(animals [5]);
+
+            animals[6] ="Burro";
+
+            console.log(animals);
+
+            animals.push("Lobo");
+
+            console.log(animals);
+
+            /* ver a contagem dos registos */
+            console.log(animals.length);
+
+            /* exercício: modificar o "cavalo" para "Cavalo com Manchas" */
+            animals[2] = "Cavalo com Manchas";
+            console.log(animals [2]);
+
+        </script>
+    </head>
+    <body></body>
+</html>

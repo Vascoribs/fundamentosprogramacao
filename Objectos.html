@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt">
+	<head>
+		<meta charset="utf-8">
+		<title>Objectos: Estruturas de Dados para Guardar Multiplas Coisas</title>
+		<script>
+			var newsList = [
+				"Israel-Gaza briefings: Biden treading carefully through political minefield",
+				"Why alcohol affects brains more than we realise",
+				"Bad blood over Singapore Taylor Swift Eras tour subsidies"
+			];
+			
+			for(var i = 0; i < newsList.length; i = i + 1) {
+				console.log( i, newsList[i] );
+			}
+
+			var newsTitle = "Why alcohol affects brains more than we realise";
+			var newsImage = "https://ychef.files.bbci.co.uk/1600x900/p0hg2km7.webp";
+			var newsAuthor = "David Robson";
+			var newsContent = `I turned 18 the day before I left home for university, conveniently passing the UK's age threshold for buying alcohol just in time to explore student pubs and bars. When I signed up with a doctor near my new home, she asked how many units of alcohol I drank each week – a common way to measure alcohol intake here in the UK, with 1.5 units roughly equalling a small glass of wine. "Around seven," I said, quickly totting up the few covert vodkas-and-orange that I'd enjoyed on nights out with my friends from school. I thought this was low, but I'd never been much of a rule-breaker.`;
+
+            /* Objecto */
+            var news = {
+                "title": "Why alcohol affects brains more than we realise",
+                "image": "https://ychef.files.bbci.co.uk/1600x900/p0hg2km7.webp",
+                "author": "David Robson",
+                "content": `I turned 18 the day before I left home for university, conveniently passing the UK's age threshold for buying alcohol just in time to explore student pubs and bars. When I signed up with a doctor near my new home, she asked how many units of alcohol I drank each week – a common way to measure alcohol intake here in the UK, with 1.5 units roughly equalling a small glass of wine. "Around seven," I said, quickly totting up the few covert vodkas-and-orange that I'd enjoyed on nights out with my friends from school. I thought this was low, but I'd never been much of a rule-breaker.`,
+                "category": "Future"
+            }
+
+            console.log( news.title );
+            console.log( news.image );
+            console.log( news.author );
+            console.log( news.content );
+            console.log( news.category );
+            
+            /* Objectos dentro de Array */
+
+            var products = [
+                {
+                    "name": "MageGee Portable",
+                    "price": 29.99,
+                    "image": "https://m.media-amazon.com/images/I/61Zumh7T0tL._AC_UL320_.jpg",
+                    "rating": 4.5
+                },
+                {
+                    "name": "Redragon S101",
+                    "price": 39.99,
+                    "image": "https://m.media-amazon.com/images/I/61xFRHrfVJL._AC_UL320_.jpg",
+                    "rating": 4.8
+                },
+                {
+                    "name": "Razor Ornata",
+                    "price": 34.99,
+                    "image": "https://m.media-amazon.com/images/I/71NQJ7P5f+L._AC_UL320_.jpg",
+                    "rating": 4.2
+                }
+            ];
+
+            for (var i = 0; i < products.length; i = i + 1 ) {
+                console.log( "Name:", products[i].name );
+                console.log ( "Price:", products[i].price);
+                console.log( "Rating", products[i].rating ); 
+            } 
+
+
+            /* exercício: criar um array de notícias, cntendo multiplas coisas por notícia, como título, data, fotografia */
+
+            console.clear();
+
+            var noticias = [
+                {
+                    "title": "Alcool faz bem",
+                    "date": "2024-03-05",
+                    "photo": "https://revistaadega.uol.com.br/media/evolucao_do_vinho_tinto.jpeg"
+                },
+                {
+                    "title": "Neve na Ericeira",
+                    "date": "2024-03-01",
+                    "photo": "https://media.istockphoto.com/id/1418786015/pt/foto/a-panoramic-view-winter-landscape-christmas-wonderland-magical-forest-meadow-covered-with.jpg?s=612x612&w=0&k=20&c=UnXsPcZgM1Q70Pvgbi0JIVB2zzzxvQZtUuN3qvnGcg8="
+                },
+                {
+                    "title": "Formigas a voar",
+                    "date": "2004-04-21",
+                    "photo": "https://img.r7.com/images/nuvem-formigas-voadoras-radar-22072020155859812?dimensions=771x420&no_crop=true"
+                },
+                {
+                    "title": "Hortas Biológicas na Lua",
+                    "date": "2030-05-10",
+                    "photo": "https://ominho.pt/wp-content/uploads/2017/01/horta-biologica.jpg"
+                }
+            ];
+
+            for (var x = 0; x < noticias.length; x = x + 1){
+                console.log( noticias[x] );
+            }
+            
+		</script>
+	</head>
+	<body>
+	</body>
+</html>
